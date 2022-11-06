@@ -1,0 +1,13 @@
+python projection_fs.py \
+--exp_dir barbershop_reproduce \
+--stylegan_weights stylegan2-ffhq-config-f.pt \
+--psp_encoder_weights e4e_ffhq_encode.pt \
+--size 1024 \
+--step 1000 \
+--lr 1e-2 \
+--noise 0.002 \
+--noise_ramp 0.65 \
+--noise_regularize 1e3 \
+--lambda_recon 1.0 \
+--lambda_fmap 2.0 \
+data/images/01012.jpg data/images/02602.jpg data/images/00148.jpg

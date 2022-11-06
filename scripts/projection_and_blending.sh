@@ -1,0 +1,16 @@
+python projection_and_blending.py \
+--exp_dir bowlcut_edited_1024p \
+--stylegan_weights stylegan2-ffhq-config-f.pt \
+--bisenet_weights 79999_iter.pth \
+--latents_source latents.pt \
+--latents_edited latent_edited.pt \
+--source_img_path_file latents_img_path.txt \
+--edited_img_path bowlcut_edited_1024p \
+--size 1024 \
+--lr 7e-2 \
+--step 20 \
+--noise 0.003 \
+--noise_ramp 0.65 \
+--noise_regularize 1e3 \
+--lambda_recon 2.0 \
+--lambda_fmap 1.0

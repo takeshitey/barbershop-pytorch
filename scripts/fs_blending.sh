@@ -1,0 +1,14 @@
+python fs_blending.py \
+--exp_dir barbershop_reproduce \
+--stylegan_weights stylegan2-ffhq-config-f.pt \
+--psp_encoder_weights psp_celebs_seg_to_face.pt \
+--bisenet_weights 79999_iter.pth \
+--pretrained_weights blending_res_fs_latent.pt \
+--size 1024 \
+--lr 1e-2 \
+--step 200000 \
+--noise 0.04 \
+--noise_ramp 0.07 \
+--noise_regularize 1e3 \
+--ref_image_hair data/images/02602.jpg \
+--ref_image_other data/images/01012.jpg
